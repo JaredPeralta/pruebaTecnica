@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Candidato {
+  documento  String  @id
+  nombre     String
+  informacionPersonal String
+  partido    Partido @relation(fields: [partidoId], references: [id])
+  partidoId  Int
+  votos      Voto[]
+}
+
+model Partido {
+  id             Int       @id @default(autoincrement())
+  nombre         String
+  plataformaPolitica String
+  candidatos    Candidato[]
+  votos         Voto[]
+}
+
+model Voto {
+  id           Int      @id @default(autoincrement())
+  candidato    Candidato @relation(fields: [candidatoId], references: [documento])
+  candidatoId  String
+  partido      Partido   @relation(fields: [partidoId], references: [id])
+  partidoId    Int
+  fechaVoto    DateTime
+}
