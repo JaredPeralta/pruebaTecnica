@@ -58,7 +58,7 @@ En este proyecto, hemos implementado los siguientes modelos:
 
 ## Base de Datos
 
-En la siguiente ruta se encuentran los archivos sql correspondientes a la construccion de la base de datos:
+En la siguiente ruta se encuentran los archivos sql correspondientes a la construccion de la base de datos donde se pueden evidenciar las restricciones solicitadas en el enunciado.
 
 ```bash
    cd Backend\prisma\migrations
