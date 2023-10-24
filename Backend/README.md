@@ -42,7 +42,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
 Una vez que hayas clonado el repositorio y hayas instalado las dependencias, puedes ejecutar el backend de la siguiente manera:
 
     ```bash
-   npm start
+    npm start
 
 El backend estará disponible en http://localhost:5000
 
