@@ -29,7 +29,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
 2. Navega hasta el directorio del proyecto:
 
    ```bash
-   cd pruebaTecnica/Backend
+   cd pruebaTecnica\Backend
 
 3. Instala las dependencias del proyecto:
 
@@ -58,3 +58,8 @@ En este proyecto, hemos implementado los siguientes modelos:
 - Singleton: Patrón que se utiliza para garantizar que haya una sola instancia de ciertos objetos en toda la aplicación, con esto nos aseguramos de tener solo una instancia de la base de datos en toda la aplicacion.
 
 ## Base de Datos
+
+En la siguiente ruta se encuentran los archivos sql correspondientes a la construccion de la base de datos:
+
+```bash
+   cd Backend\prisma\migrations
