@@ -104,7 +104,7 @@ const GestionCandidato = () => {
       }
       window.location.reload();
     } catch (e) {
-      alert(e.response.data.mensaje);
+      alert('No se puede eliminar un candidato que ya tiene votos');
     }
   }
 
@@ -141,7 +141,7 @@ const GestionCandidato = () => {
           <tr>
             <th>Nombre</th>
             <th>Informacion Personal</th>
-            <th>Id del partido</th>
+            <th>Partido</th>
           </tr>
         </thead>
         <tbody>
@@ -151,7 +151,11 @@ const GestionCandidato = () => {
             <tr key={candidato.documento}>
               <td>{candidato.nombre}</td>
               <td>{candidato.informacionPersonal}</td>
-              <td>{candidato.partidoId}</td>
+              <td>{
+                  partidos.map((partido) => (
+                    partido.id === candidato.partidoId ? partido.nombre : null
+                  ))
+              }</td>
               <td>
                 <button onClick={() => handleEdit(parseInt(candidato.documento))}>Editar</button>
                 <button onClick={() => handleDelete(parseInt(candidato.documento))}>Eliminar</button>
