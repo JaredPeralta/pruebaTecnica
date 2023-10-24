@@ -10,8 +10,6 @@ Este es el backend de una plataforma web para gestionar votos, candidatos y part
 - [Tecnologías](#tecnologías)
 - [Modelos](#modelos)
 - [Base de Datos](#base-de-datos)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
 
 ## Requisitos
 
