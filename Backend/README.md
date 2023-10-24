@@ -28,18 +28,18 @@ Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
    ```bash
    git clone https://github.com/tu-usuario/backend-xyz.git
 
-##Tecnologías
+## Tecnologías
 El backend de esta aplicación utiliza las siguientes tecnologías:
 
 -Node.js: Plataforma de ejecución de JavaScript.
 -Express: Framework de aplicaciones web para Node.js.
 -Prisma: ORM (Object-Relational Mapping) para la base de datos.
 
-##Modelos
+## Modelos
 En este proyecto, hemos implementado los siguientes modelos:
 
 -DAO (Data Access Object): Patrón que se encarga de la comunicación con la base de datos. Puedes encontrar los DAOs en la carpeta /dao.
 -DTO (Data Transfer Object): Patrón que define la estructura de los objetos que se transmiten entre el frontend y el backend. Puedes encontrar los DTOs en la carpeta /dto.
 -Singleton: Patrón que se utiliza para garantizar que haya una sola instancia de ciertos objetos en toda la aplicación.
 
-##Base de Datos
+## Base de Datos
