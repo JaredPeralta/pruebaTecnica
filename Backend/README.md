@@ -62,3 +62,5 @@ En la siguiente ruta se encuentran los archivos sql correspondientes a la constr
 
 ```bash
    cd Backend\prisma\migrations
+
+![Diagrama de la Base de Datos](./modelo.png)
