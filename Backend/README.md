@@ -38,7 +38,8 @@ Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
 ## Ejecución
 Una vez que hayas clonado el repositorio y hayas instalado las dependencias, puedes ejecutar el backend de la siguiente manera:
 
-    npm start
+    cd src
+    node app.js
 
 El backend estará disponible en http://localhost:5000
 
