@@ -1,6 +1,8 @@
+const prisma = require('../db.js');
+
 class partidoDAO{
-  constructor(dbConnection){
-    this.dbConnection = dbConnection;
+  constructor(){
+    this.dbConnection = prisma;
   }
 
   async getAllPartidos(){
@@ -12,12 +14,12 @@ class partidoDAO{
     }
   }
 
-  async createPartido(nombre, plataforma){
+  async createPartido(partidoDTO){
     try {
       const partido = await this.dbConnection.partido.create({
         data: {
-          nombre: nombre,
-          plataformaPolitica: plataforma
+          nombre: partidoDTO.nombre,
+          plataformaPolitica: partidoDTO.plataformaPolitica
         }
       });
       return partido;
@@ -26,15 +28,15 @@ class partidoDAO{
     }
   }
 
-  async updatePartido(id, nombre, plataforma){
+  async updatePartido(partidoDTO){
     try {
       const partido = await this.dbConnection.partido.update({
         where: {
-          id: parseInt(id)
+          id: parseInt(partidoDTO.id)
         },
         data: {
-          nombre: nombre,
-          plataformaPolitica: plataforma
+          nombre: partidoDTO.nombre,
+          plataformaPolitica: partidoDTO.plataformaPolitica
         }
       });
       return partido;
@@ -43,11 +45,11 @@ class partidoDAO{
     }
   }
 
-  async deletePartido(id){
+  async deletePartido(partidoDTO){
     try {
       const partido = await this.dbConnection.partido.delete({
         where: {
-          id: parseInt(id)
+          id: parseInt(partidoDTO.id)
         }
       });
       return partido;
