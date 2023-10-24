@@ -19,7 +19,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
 
 - Node.js
 - npm (administrador de paquetes de Node.js)
-- Base de datos (puedes utilizar SQLite, MySQL, PostgreSQL, etc.)
+- Base de datos, por motivos de flexibilidad se uso un ORM llamado Prisma montado sobre la Base de datos SqLite
 
 ## Instalación
 
@@ -41,7 +41,6 @@ Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
 ## Ejecución
 Una vez que hayas clonado el repositorio y hayas instalado las dependencias, puedes ejecutar el backend de la siguiente manera:
 
-    ```bash
     npm start
 
 El backend estará disponible en http://localhost:5000
