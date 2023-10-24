@@ -55,6 +55,6 @@ En este proyecto, hemos implementado los siguientes modelos:
 
 - DAO (Data Access Object): Patrón que se encarga de la comunicación con la base de datos. Puedes encontrar los DAOs en la carpeta /dao.
 - DTO (Data Transfer Object): Patrón que define la estructura de los objetos que se transmiten entre el frontend y el backend. Puedes encontrar los DTOs en la carpeta /dto.
-- Singleton: Patrón que se utiliza para garantizar que haya una sola instancia de ciertos objetos en toda la aplicación.
+- Singleton: Patrón que se utiliza para garantizar que haya una sola instancia de ciertos objetos en toda la aplicación, con esto nos aseguramos de tener solo una instancia de la base de datos en toda la aplicacion.
 
 ## Base de Datos
