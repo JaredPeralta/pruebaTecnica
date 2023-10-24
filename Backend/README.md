@@ -59,7 +59,7 @@ En este proyecto, hemos implementado los siguientes modelos:
 ## Base de Datos
 Modelo de la base de datos:
 
-(./modelo.png)
+![Diagrama de la Base de Datos](./modelo.png)
 
 En la siguiente ruta se encuentran los archivos sql correspondientes a la construccion de la base de datos donde se pueden evidenciar las restricciones solicitadas en el enunciado.
 
