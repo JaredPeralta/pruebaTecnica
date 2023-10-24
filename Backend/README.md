@@ -58,9 +58,10 @@ En este proyecto, hemos implementado los siguientes modelos:
 
 ## Base de Datos
 
+El modelo de la base de datos usado es el siguiente:
+![Diagrama de la Base de Datos](./modelo.png)
+
 En la siguiente ruta se encuentran los archivos sql correspondientes a la construccion de la base de datos donde se pueden evidenciar las restricciones solicitadas en el enunciado.
 
 ```bash
    cd Backend\prisma\migrations
-
-![Diagrama de la Base de Datos](./modelo.png)
