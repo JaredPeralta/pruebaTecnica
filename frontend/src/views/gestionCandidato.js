@@ -29,8 +29,11 @@ const GestionCandidato = () => {
     const fetchPartidos = async () => {
       try {
         const result = await axios.get(`${apiUrl}/partidos`);
-        setPartidos(result.data);
-        setSelectedOption(result.data[0].id);
+        if (result.data.length !== 0) {
+          setPartidos(result.data);
+          setSelectedOption(result.data[0].id);
+        }
+        
       } catch (error) {
         alert(error.response.data.mensaje);
       }
