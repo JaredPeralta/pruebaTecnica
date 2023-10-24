@@ -57,9 +57,9 @@ En este proyecto, hemos implementado los siguientes modelos:
 - Singleton: Patrón que se utiliza para garantizar que haya una sola instancia de ciertos objetos en toda la aplicación, con esto nos aseguramos de tener solo una instancia de la base de datos en toda la aplicacion.
 
 ## Base de Datos
+Modelo de la base de datos:
 
-El modelo de la base de datos usado es el siguiente:
-![Diagrama de la Base de Datos](./modelo.png)
+(./modelo.png)
 
 En la siguiente ruta se encuentran los archivos sql correspondientes a la construccion de la base de datos donde se pueden evidenciar las restricciones solicitadas en el enunciado.
 
