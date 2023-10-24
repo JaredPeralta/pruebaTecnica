@@ -17,7 +17,6 @@ Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
 
 - Node.js
 - npm (administrador de paquetes de Node.js)
-- Base de datos, por motivos de flexibilidad se uso un ORM llamado Prisma montado sobre la Base de datos SqLite
 
 ## Instalación
 
@@ -48,7 +47,7 @@ El backend de esta aplicación utiliza las siguientes tecnologías:
 
 - Node.js: Plataforma de ejecución de JavaScript.
 - Express: Framework de aplicaciones web para Node.js.
-- Prisma: ORM (Object-Relational Mapping) para la base de datos.
+- Prisma: ORM (Object-Relational Mapping) para la base de datos, corriendo sobre SqLite como motor de base de datos
 
 ## Modelos
 En este proyecto, hemos implementado los siguientes modelos:
