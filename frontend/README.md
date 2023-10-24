@@ -15,7 +15,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
 
 - Node.js
 - npm (administrador de paquetes de Node.js)
-- Reat.js
+- React.js
 
 ## Instalación
 
