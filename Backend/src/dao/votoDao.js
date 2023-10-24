@@ -28,6 +28,19 @@ class votoDAO{
       throw error;
     }
   }
+
+  async deleteVoto(id){
+    try {
+      const voto = await this.dbConnection.voto.delete({
+        where: {
+          id: parseInt(id)
+        }
+      });
+      return voto;
+    } catch (error) {
+      throw error;
+    }
+  }
 }
 
 module.exports = votoDAO;

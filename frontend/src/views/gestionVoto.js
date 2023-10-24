@@ -1,9 +1,15 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import Nav from '../components/navBar';
 
 const gestionVoto = () => {
   return (
     <div>
-      <h1>Hello World!</h1>
+      <Nav/>
+      <h1>Votar</h1>
+
+      <h1>Listado de Votos</h1>
     </div>
   );
 }

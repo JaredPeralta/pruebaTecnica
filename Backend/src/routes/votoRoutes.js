@@ -11,4 +11,8 @@ router.post('/voto', async  (req, res) => {
     votoController.createVoto(req, res)
 })
 
+router.delete('/voto/:id', async  (req, res) => {
+    votoController.deleteVoto(req, res)
+})
+
 module.exports = router
